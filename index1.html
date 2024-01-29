@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <title>PangsuiTechPig Game</title>
+  </head>
+
+  <body>
+    <!-- <div class="help">
+        <a class="play blink">How to Play!</a>
+        <a href="/index.html" class="play main-site">Back to main site</a>
+        <div class="instructions">
+            <h1>Instructions</h1>
+            <p>
+                Set the winning score in the field at the top extreme right of the page. <br>The first player to reach this score is declared the winner. Click on the 'ROLL DICE' button as long as you want.<br> If you want to gain points, click on the
+                'HOLD' button and your score will be counted. You loose your ENTIRE score when you roll two 6 in a row. After that, it's the next player's turn. You loose your current score when one of the dice shows a 1 and it's the next player's turn.
+                <a href="" class="hide-instructions">hide details</a>
+            </p>
+        </div>
+    </div> -->
+    <div class="wrapper clearfix">
+      <div class="player-0-panel active">
+        <div class="player-name" id="name-0">Player 1</div>
+        <div class="player-score" id="score-0">43</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-0">11</div>
+        </div>
+      </div>
+
+      <div class="player-1-panel">
+        <div class="player-name" id="name-1">Player 2</div>
+        <div class="player-score" id="score-1">72</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-1">0</div>
+        </div>
+      </div>
+
+      <button class="btn-new">
+        <i class="ion-ios-plus-outline"></i>New game
+      </button>
+      <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+      <button class="btn-hold">
+        <i class="ion-ios-download-outline"></i>Hold
+      </button>
+
+      <input type="text" placeholder="final score" class="final-score" />
+      <input type="text" placeholder="100" class="winning-score" />
+      <div class="setWinningScore">
+        <h1>set winning score:</h1>
+      </div>
+
+      <img src="dice-5.png" alt="Dice" class="dice" />
+      <img src="dice-5.png" alt="Dice" class="dice2" />
+    </div>
+
+    <footer class="copy-right">
+      <p>&copy;2020 Pangsui Linge</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
